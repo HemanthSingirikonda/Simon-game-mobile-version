@@ -83,5 +83,9 @@ function ca(ind){
 
 var indi=0;
 $("#playbutton").click(function(){
+  $("#playbutton").addClass("pressed");
+  setTimeout(function(){
+    $("#playbutton").removeClass("pressed");
+  },100);
   if(indi===0){indi++;nextSequence();}
 });
