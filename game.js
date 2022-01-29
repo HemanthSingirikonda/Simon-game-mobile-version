@@ -87,5 +87,7 @@ $("#playbutton").click(function(){
   setTimeout(function(){
     $("#playbutton").removeClass("pressed");
   },100);
-  if(indi===0){indi++;nextSequence();}
+  setTimeout(function(){
+    if(indi===0){indi++;nextSequence();}
+  },1000);
 });
